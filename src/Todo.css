@@ -1,0 +1,43 @@
+.form__todo input{
+ width: 50%;
+ border: 1px solid black;  
+}
+
+.form__todo form input,
+form button{
+    width: 250px;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: #1b427d;
+    border-radius: 5px;
+    padding: 5px 5px;
+    color: white;
+}
+
+.form__todo form button{
+    width: 80px;
+    margin-left: 15px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    box-shadow: -5px -5px 5px #fff7,
+    5px 5px 5px;
+}
+
+@keyframes opacity{
+    from{
+        opacity: 0;
+        transform: scale(0.7);
+    }
+}
+
+.active {
+    animation: del 0.3s linear;
+  }
+  
+  @keyframes del{
+    to{
+      opacity:0;
+      transform: rotate(15deg) skew(25deg) scale(0);
+    }
+  }
